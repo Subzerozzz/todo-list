@@ -70,6 +70,12 @@ body{
     background-color: #fff;
     padding: 15px 20px;
     border-radius: 10px;
+    margin: 10px;
+}
+
+.todo-app__item--completed .todo-app__item-content{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 .todo-app__item-button{
@@ -78,6 +84,7 @@ body{
     border-radius: 900px;
     border: 0;
     text-align: center;
+    cursor: pointer;
 }
 
 .todo-app__item-button--edit{
@@ -87,6 +94,10 @@ body{
 
 .todo-app__item-button--complete{
     background-color: rgb(39, 194, 39);
+}
+
+.todo-app__item-button--complete[show = 'none']{
+    display: none;
 }
 
 .todo-app__item-button--delete{
